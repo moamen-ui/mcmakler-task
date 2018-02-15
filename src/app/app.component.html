@@ -1,0 +1,28 @@
+  <div class="col s12 m6 l4" *ngFor="let adv of advs">
+    <div class="card">
+      <div class="card-image">
+        <img *ngIf="adv.advertisementAssets[0].advertisementThumbnails"
+          src="{{adv.advertisementAssets[0].advertisementThumbnails.inventory_m.url}}"
+          srcset="{{adv.advertisementAssets[0].advertisementThumbnails.thumb_xs.url}} 300w"
+          alt="{{adv.title}}"
+          title="{{adv.title}}"
+        >
+        <span class="badge white">kaufen</span>
+      </div>
+      <div class="card-content">
+        <p>{{adv.title}}</p>
+        <p></p>
+        <span class="customLight">{{adv.realestateSummary.address.number}} {{adv.realestateSummary.address.street}} / {{adv.realestateSummary.address.city}}.</span>
+      </div>
+      <div class="card-footer">
+        <div class="price">{{adv.advertisementPrice.sellPrice}} €</div>
+        <div class="info">
+          <span class="v-divider">{{adv.realestateSummary.numberOfRooms}} zimmer</span>
+          <span>ab {{adv.realestateSummary.space | number:'.0-2'}} m <sup>2</sup></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

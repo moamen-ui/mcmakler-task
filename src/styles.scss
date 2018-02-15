@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+$customLight: #b9b9b9;
+// Colors
+@import "../node_modules/materialize-css/sass/components/color";
+
+// Variables;
+@import "../node_modules/materialize-css/sass/components/variables";
+
+// Reset
+@import "../node_modules/materialize-css/sass/components/normalize";
+
+// Grid
+@import "../node_modules/materialize-css/sass/components/grid";
+
+// Cards
+@import "../node_modules/materialize-css/sass/components/cards";
+
+// Global
+@import "../node_modules/materialize-css/sass/components/global";
+
+//Typography
+@import "../node_modules/materialize-css/sass/components/typography";
+
+.customLight {
+  color: $customLight;
+}
+.badge {
+  position: absolute;
+  top:20px;
+  left:20px;
+  min-width: 50px;
+  padding: 5px 15px;
+  text-align: center;
+  @extend .customLight;
+  @extend .z-depth-1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  font-weight: bold;
+  .info {
+    color: $customLight;
+  }
+}
+.v-divider {
+  position: relative;
+  padding-right: 15px;
+  margin-right: 10px;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+  }
+}
