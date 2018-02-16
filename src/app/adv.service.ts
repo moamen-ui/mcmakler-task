@@ -2,10 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
-export interface AdvItem {
-  image: string;
-  title: string;
-}
 
 @Injectable()
 export class AdvService {

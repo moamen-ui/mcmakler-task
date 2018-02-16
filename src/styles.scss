@@ -39,7 +39,7 @@ $customLight: #b9b9b9;
 .card-footer {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 12px 24px 24px;
   font-weight: bold;
   .info {
     color: $customLight;
@@ -58,4 +58,12 @@ $customLight: #b9b9b9;
     width: 1px;
     background-color: #ccc;
   }
+}
+.card-image {
+  height: 190px;
+  overflow: hidden;
+}
+.advTitle {
+  height: 3rem;
+  overflow: hidden
 }
