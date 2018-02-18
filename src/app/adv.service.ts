@@ -10,4 +10,9 @@ export class AdvService {
   getAdvs() {
     return this.http.get('http://localhost:3000/db').map(result => result);
   }
+  
 }
+
+
+
+
