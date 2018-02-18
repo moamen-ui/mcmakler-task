@@ -1,5 +1,3 @@
-# Task
-
 This is my task for McMacler company.
 
 
