@@ -3,14 +3,14 @@
       <div class="card-image">
         <img *ngIf="adv.advertisementAssets[0]"
           src="{{adv.advertisementAssets[0].advertisementThumbnails.inventory_m.url}}"
-          srcset="{{adv.advertisementAssets[0].advertisementThumbnails.thumb_xs.url}} 250w"
+          srcset="{{adv.advertisementAssets[0].advertisementThumbnails.thumb_xs.url}} 200w"
           alt="{{adv.title}}"
           title="{{adv.title}}"
         >
         <span class="badge white">kaufen</span>
       </div>
       <div class="card-content">
-        <p class="advTitle">{{adv.title}}</p>
+        <h4 class="advTitle">{{adv.title}}</h4>
         <span class="customLight">{{adv.realestateSummary.address.number}} {{adv.realestateSummary.address.street}} / {{adv.realestateSummary.address.city}}.</span>
       </div>
       <div class="card-footer">
@@ -25,4 +25,3 @@
       </div>
     </div>
   </div>
-

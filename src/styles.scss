@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @charset "UTF-8";
 $customLight: #b9b9b9;
+
+/* Import only used styles form materialize-css  */
 // Colors
 @import "../node_modules/materialize-css/sass/components/color";
 
@@ -59,11 +61,20 @@ $customLight: #b9b9b9;
     background-color: #ccc;
   }
 }
+.card {
+  box-shadow: none;
+  border: 1px solid #e7e7e7;
+  border-top-width: 0;
+}
 .card-image {
   height: 190px;
   overflow: hidden;
+  margin: 0 -1px;
 }
 .advTitle {
   height: 3rem;
-  overflow: hidden
+  overflow: hidden;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
 }
