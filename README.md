@@ -10,7 +10,7 @@ This is my task for McMacler company.
 
 ## Development server
 
-to run the development server you must instal:
+to run the development server you must install:
 1. [nodejs](https://nodejs.org/)
 1. Angular cli `npm install -g @angular/cli`
 
