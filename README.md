@@ -27,6 +27,6 @@ for production build, just run this `ng build -prod`, you will find "dist" folde
 ## CORS problem
 
 you may face a CORS problem, so there is a copy of the api json on file `db.json` next of `pakage.json`, to use it as api provider follow that:
-1. run `npm i json-server` to install json server for our db.json api
-1. run `json-server --watch db.json` to start json server, will provide a URL for the api.
+1. run `npm i json-server -g` to install json server for our db.json api
+1. run `json-server db.json` to start json server, will provide a URL for the api.
 1. replace the url placed in `src/app/adv.service.ts` with new api url `http://localhost:3000/db`
